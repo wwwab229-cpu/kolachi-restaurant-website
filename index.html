@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -24,7 +26,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero cinematic-hero">
       <div class="hero-image" role="img" aria-label="Atmospheric restaurant dining setting"></div>
       <div class="hero-shade"></div>
       <div class="hero-content">
@@ -34,7 +36,8 @@
         <a class="round-link reveal" href="#story"><span>Explore the experience</span><b>↓</b></a>
       </div>
       <div class="hero-side-note">KARACHI · DINING CONCEPT</div>
-      <div class="hero-index">01 <i></i> 05</div>
+      <div class="hero-index"><span class="scene-number">01</span> <i></i> <span>05</span></div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
     </section>
 
     <section class="intro section-pad" id="story">
@@ -47,7 +50,7 @@
     </section>
 
     <section class="experience" id="experience">
-      <div class="experience-image"></div>
+      <div class="experience-image"></div><div class="experience-image experience-image-alt"></div>
       <div class="experience-overlay"></div>
       <div class="experience-content section-pad">
         <div class="section-kicker light reveal"><span>02 / THE EXPERIENCE</span><i></i><span>MADE FOR THE MOMENT</span></div>
@@ -61,7 +64,7 @@
     <section class="menu-section section-pad" id="menu">
       <div class="section-kicker reveal"><span>03 / THE MENU</span><i></i><span>A TASTE OF THE EXPERIENCE</span></div>
       <div class="menu-heading"><h2 class="display reveal">Made to be<br><em>shared.</em></h2><p class="reveal">A visual menu direction for the concept. Final dishes, descriptions and prices will be added only after confirmation from the restaurant.</p></div>
-      <div class="menu-grid">
+      <div class="menu-track-wrap"><div class="menu-grid">
         <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Freshly prepared meal" loading="lazy"><div><span>01 — THE FIRST BITE</span><h3>Begin with something memorable</h3></div></article>
         <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Grilled food served at a table" loading="lazy"><div><span>02 — FROM THE FLAME</span><h3>Made for the centre of the table</h3></div></article>
         <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Dessert presentation" loading="lazy"><div><span>03 — A SWEET FINISH</span><h3>Leave room for one more moment</h3></div></article>
